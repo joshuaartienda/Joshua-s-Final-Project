@@ -1,0 +1,40 @@
+<!-- ************** -->
+<!-- Lab 7 Story 1 -->
+<!-- ************** -->
+
+<html>
+ <head>
+   <title> Story 7.1 </title>
+ </head>
+
+<body>
+ <h2> Christmas Story </h2>
+  <p> Enter Noun 1: <input type="text" id="nounBox1" size=20 value="Noun"><br>
+
+  Enter Noun 2: <input type="text" id="nounBox2" size=20 value="Noun 2"><br>
+
+  Enter Adjective: <input type="text" id="adjBox1" size=20 value="Adj 1"><br>
+
+  Enter Noun 3: <input type="text" id="nounBox3" size=20 value="Noun 3">
+
+ </p>
+<input type="button" value="Click For Your Story!"
+     onclick="noun1=document.getElementById('nounBox1').value;
+             noun2=document.getElementById('nounBox2').value;
+             adj=document.getElementById('adjBox1').value;
+             noun3=document.getElementById('nounBox3').value;
+     document.getElementById('outputDiv').innerHTML=
+  '<p> On the first day of Christmas, my true love gave to me, a/an <b><I>' + noun1 +
+  '</b></I> in a/an <b><I>' + noun2 + 
+  '</b></I> tree.<br> One the second day of Christmas,' +
+  ' my true love gave to me, two <b><I>' + adj +
+  '</b></I> doves and a/an <b><I>' + noun3 + 
+  '</I></b> in a pear tree.</p>';">
+
+
+<hr>
+<div id="outputDiv"></div>
+<input type="button" value="Go Home"
+   onclick="location.href='index.html' ;"  >
+</body>
+</html>

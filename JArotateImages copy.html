@@ -1,0 +1,42 @@
+
+
+<!doctype html>
+<!-- JArotateImages.html                               Joshua Artienda -->
+<!-- Web page that rotates 3 images at the click of a button. -->
+<!-- ======================================================== -->
+
+<html>
+ <head>
+   <title>Image Rotator on Click of a button</title>
+ </head>
+
+ <body>
+  <div style="text-align:center">
+  <h2>Image Rotator</h2>
+  <p>
+   <img id="leftImg" src="../ImagesForHTMLandJS2/happy.gif">
+   <img id="rightImg" src="../ImagesForHTMLandJS2/sad.gif">
+   <img id="middleImg" src="../ImagesForHTMLandJS2/lemon.jpg">
+  </p>
+  <input type="button" value="Rotate left"
+      onclick="
+		smile=document.getElementById('leftImg').src;
+		sad=document.getElementById('rightImg').src;
+		lemon=document.getElementById('middleImg').src;
+
+	document.getElementById('leftImg').src=
+document.getElementById('middleImg').src;
+		document.getElementById('middleImg').src=smile;
+	document.getElementById('middleImg').src=
+document.getElementById('rightImg').src;
+		document.getElementById('rightImg').src=lemon;
+	document.getElementById('rightImg').src=
+document.getElementById('leftImg').src;
+		document.getElementById('leftImg').src=sad;
+	document.getElementById('leftImg').src=
+document.getElementById('middleImg').src;
+		document.getElementById('middleImg').src=smile;
+		">
+   </div>
+ </body>
+</html>

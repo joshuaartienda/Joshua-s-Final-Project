@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- tip.html                             Joshua Artienda -->
+<!-- Web page that calculates the tip amount on a check. -->
+<!-- =================================== -->
+
+<html>
+ <head>
+   <title> Josh's Tip Calculator </title>
+ </head>
+<body style = "background-color:lightyellow">
+
+ <body>
+   <h2>Josh's Tip Calculator</h2>
+   <p>
+     Enter the check amount: $<input type="text" id="amountBox" size=10 value="">
+     <br>
+     Enter the Tip %: <input type="text" id="tipBox" size=10 value="">
+   </p>   
+   <input type="button" value="Calculate Tip" 
+          onclick="amount = parseFloat(document.getElementById('amountBox').value);
+                   tip = amount * parseFloat(document.getElementById('tipBox').value)/100;
+                   document.getElementById('outputDiv').innerHTML=
+                       'You should tip $' + tip;">
+   
+   <hr>
+   <div id="outputDiv"></div>
+<input type="button" value="Go Home"
+   onclick="location.href='index.html' ;"  >
+ </body>
+</html>
